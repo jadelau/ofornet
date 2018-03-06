@@ -3,6 +3,7 @@ package com.hust.ofornet.service.impl;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.hust.ofornet.mapper.JobMapper;
 import com.hust.ofornet.pojo.Category;
@@ -12,7 +13,7 @@ import com.hust.ofornet.pojo.JobExample;
 import com.hust.ofornet.service.CategoryService;
 import com.hust.ofornet.service.CompanyService;
 import com.hust.ofornet.service.JobService;
-
+@Service
 public class JobServiceImpl implements JobService {
 	@Autowired
 	JobMapper jobMapper;
